@@ -488,7 +488,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     document.querySelectorAll('.telegram-join').forEach(function(button) {
       button.addEventListener('click', function() {
         if (typeof fbq === 'function') {
-          fbq('trackCustom', 'TelegramJoinClick', {
+          fbq('trackCustom', 'Subscribe', {
             channel: 'ST Kerela'
           });
         }
