@@ -479,21 +479,6 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     ✈ Join Telegram Channel
   </a>
 
-  <script>
-    // =========================================================
-    // TELEGRAM CLICK TRACKING
-    // Meta Pixel Base Code activate karne ke baad yeh automatically
-    // Telegram CTA clicks ko TelegramJoinClick event ke naam se track karega.
-    // =========================================================
-    document.querySelectorAll('.telegram-join').forEach(function(button) {
-      button.addEventListener('click', function() {
-        if (typeof fbq === 'function') {
-          fbq('trackCustom', 'Subscribe', {
-            channel: 'ST Kerela'
-          });
-        }
-      });
-    });
-  </script>
+
 </body>
 </html>
