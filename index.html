@@ -33,6 +33,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       box-sizing: border-box;
     }
 
+
     :root {
       --green: #38ff78;
       --cyan: #41dfff;
@@ -43,10 +44,22 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       --muted: #b5bfcd;
     }
 
+
+    html {
+      min-height: 100%;
+    }
+
+
     body {
       min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
       color: var(--white);
+
       overflow-x: hidden;
 
       background:
@@ -65,6 +78,10 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
+    /* =========================
+       MAIN CONTAINER
+    ========================= */
+
     .container {
       width: 100%;
       max-width: 680px;
@@ -72,9 +89,16 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
+    /* =========================
+       MAIN CARD
+    ========================= */
+
     .card {
       width: 100%;
-      padding: 30px 22px 25px;
+
+      padding:
+        30px 22px
+        25px;
 
       border-radius: 30px;
 
@@ -99,16 +123,23 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* BADGE */
+    /* =========================
+       TOP BADGE
+    ========================= */
 
     .badge {
       width: fit-content;
-      margin: 0 auto 18px;
 
-      padding: 9px 16px;
+      margin:
+        0 auto
+        18px;
+
+      padding:
+        9px 16px;
 
       display: flex;
       align-items: center;
+
       gap: 9px;
 
       border-radius: 50px;
@@ -126,6 +157,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       font-weight: 900;
 
       letter-spacing: 1.6px;
+
       text-transform: uppercase;
     }
 
@@ -144,7 +176,9 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* BRAND */
+    /* =========================
+       BRAND
+    ========================= */
 
     .brand {
       text-align: center;
@@ -156,6 +190,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
         clamp(28px, 7vw, 47px);
 
       line-height: 1.1;
+
       font-weight: 900;
 
       letter-spacing: -1px;
@@ -187,13 +222,17 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* LOGO */
+    /* =========================
+       LOGO
+    ========================= */
 
     .logo-wrap {
       width: 132px;
       height: 132px;
 
-      margin: 25px auto 20px;
+      margin:
+        25px auto
+        20px;
 
       padding: 5px;
 
@@ -230,7 +269,9 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* DESCRIPTION */
+    /* =========================
+       DESCRIPTION
+    ========================= */
 
     .description {
       max-width: 580px;
@@ -249,10 +290,13 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* FEATURES */
+    /* =========================
+       FEATURES
+    ========================= */
 
     .features {
       display: grid;
+
       gap: 12px;
 
       margin-bottom: 22px;
@@ -265,7 +309,8 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       gap: 13px;
 
-      padding: 15px 14px;
+      padding:
+        15px 14px;
 
       border-radius: 18px;
 
@@ -289,6 +334,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       min-width: 38px;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
@@ -326,15 +372,21 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* MAIN CTA - DIRECTLY ABOVE TIMER */
+    /* =========================
+       MAIN TELEGRAM CTA
+       NORMAL CLICKABLE ELEMENT
+    ========================= */
 
-    .join-btn {
+    #telegram-join-button {
       width: 100%;
+
       min-height: 70px;
 
-      padding: 16px 18px;
+      padding:
+        16px 18px;
 
       display: flex;
+
       align-items: center;
       justify-content: center;
 
@@ -342,7 +394,12 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       border-radius: 20px;
 
+      position: relative;
+
+      z-index: 5;
+
       text-align: center;
+
       text-decoration: none;
 
       color: #041108;
@@ -353,6 +410,8 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       font-weight: 950;
 
       letter-spacing: 0.5px;
+
+      cursor: pointer;
 
       background:
         linear-gradient(
@@ -371,22 +430,26 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
         rgba(255, 255, 255, 0.7);
 
       transition:
-        transform 0.2s ease,
         filter 0.2s ease;
     }
 
 
-    .join-btn:hover {
-      transform:
-        translateY(-2px);
-
+    #telegram-join-button:hover {
       filter:
         brightness(1.05);
     }
 
 
+    #telegram-join-button:active {
+      filter:
+        brightness(0.98);
+    }
+
+
     .auto-note {
-      margin: 13px 0 14px;
+      margin:
+        13px 0
+        14px;
 
       text-align: center;
 
@@ -396,10 +459,13 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* TIMER */
+    /* =========================
+       TIMER
+    ========================= */
 
     .timer-box {
-      padding: 14px 16px;
+      padding:
+        14px 16px;
 
       border-radius: 18px;
 
@@ -421,18 +487,21 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       font-weight: 900;
 
       letter-spacing: 1.4px;
+
       text-transform: uppercase;
     }
 
 
     .timer-row {
       display: flex;
+
       justify-content: center;
       align-items: baseline;
 
       gap: 8px;
 
-      margin: 7px 0;
+      margin:
+        7px 0;
     }
 
 
@@ -474,7 +543,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    .progress-bar {
+    #progressBar {
       width: 100%;
       height: 100%;
 
@@ -513,9 +582,14 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* KIRTNIX */
+    /* =========================
+       KIRTNIX CARD
+       CARD IS NOT CLICKABLE
+    ========================= */
 
-    .kirtnix {
+    .kirtnix-card {
+      width: 100%;
+
       margin-top: 24px;
 
       padding: 2px;
@@ -525,9 +599,9 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       background:
         linear-gradient(
           100deg,
-          #ffc269,
-          #ff9da8 48%,
-          #9c7cff
+          #ffc269 0%,
+          #ff9da8 50%,
+          #9c7cff 100%
         );
 
       box-shadow:
@@ -536,8 +610,12 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    .kirtnix-inner {
-      padding: 28px 20px 25px;
+    .kirtnix-content {
+      width: 100%;
+
+      padding:
+        28px 20px
+        25px;
 
       border-radius: 22px;
 
@@ -546,14 +624,14 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       background:
         linear-gradient(
           135deg,
-          #1b2130,
-          #121a2a
+          #202838,
+          #151c2b
         );
     }
 
 
     .kirtnix-tag {
-      margin-bottom: 15px;
+      margin-bottom: 14px;
 
       color: #ffc979;
 
@@ -567,12 +645,14 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
 
     .kirtnix-title {
+      margin: 0;
+
       font-size:
         clamp(24px, 6vw, 32px);
 
-      font-weight: 900;
-
       line-height: 1.2;
+
+      font-weight: 900;
 
       color: #f6f8fc;
     }
@@ -583,7 +663,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    .kirtnix-sub {
+    .kirtnix-description {
       max-width: 430px;
 
       margin:
@@ -598,7 +678,17 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    .kirtnix-btn {
+    /* =========================
+       KIRTNIX ACTUAL BUTTON
+       SEPARATE CLICK TARGET
+    ========================= */
+
+    #kirtnix-connect-button {
+      min-height: 48px;
+
+      padding:
+        13px 24px;
+
       display: inline-flex;
 
       align-items: center;
@@ -606,59 +696,64 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       gap: 8px;
 
-      min-height: 48px;
+      position: relative;
 
-      padding: 12px 24px;
+      z-index: 10;
 
       border-radius: 17px;
 
       border:
         1px solid
-        rgba(255, 255, 255, 0.85);
+        rgba(255, 255, 255, 0.90);
 
-      outline:
-        2px solid
-        rgba(255, 255, 255, 0.15);
-
-      color: #16120c;
-
-      text-decoration: none;
-
-      font-size: 13px;
-      font-weight: 900;
+      color: #17120b;
 
       background:
         linear-gradient(
           135deg,
-          #fff1ca,
-          #ffc66e
+          #fff3cf,
+          #ffc76e
         );
 
       box-shadow:
         0 7px 18px
         rgba(0, 0, 0, 0.25);
 
+      text-decoration: none;
+
+      font-size: 13px;
+      font-weight: 900;
+
+      line-height: 1.2;
+
+      cursor: pointer;
+
       transition:
-        transform 0.2s ease,
         filter 0.2s ease;
     }
 
 
-    .kirtnix-btn:hover {
-      transform:
-        translateY(-2px);
-
+    #kirtnix-connect-button:hover {
       filter:
-        brightness(1.06);
+        brightness(1.05);
     }
 
 
-    /* DISCLAIMER */
+    #kirtnix-connect-button:active {
+      filter:
+        brightness(0.98);
+    }
+
+
+    /* =========================
+       DISCLAIMER
+    ========================= */
 
     .disclaimer {
       margin-top: 24px;
 
-      padding: 17px 16px;
+      padding:
+        17px 16px;
 
       border-radius: 18px;
 
@@ -698,6 +793,10 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
+    /* =========================
+       FOOTER
+    ========================= */
+
     .footer {
       margin-top: 16px;
 
@@ -711,32 +810,62 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
+    /* =========================
+       MOBILE
+    ========================= */
+
     @media (max-width: 480px) {
 
       body {
-        padding: 12px 8px;
+        padding:
+          12px 8px;
       }
 
+
       .card {
-        padding: 25px 15px 20px;
+        padding:
+          25px 15px
+          20px;
+
         border-radius: 24px;
       }
 
-      .join-btn {
-        padding: 15px 10px;
+
+      #telegram-join-button {
+        padding:
+          15px 10px;
+
         font-size: 15px;
       }
 
+
       .feature {
-        padding: 13px 11px;
+        padding:
+          13px 11px;
       }
 
-      .kirtnix-inner {
-        padding: 25px 14px 22px;
+
+      .kirtnix-content {
+        padding:
+          25px 14px
+          22px;
       }
 
-      .kirtnix-sub {
+
+      .kirtnix-description {
         font-size: 12px;
+      }
+
+
+      #kirtnix-connect-button {
+        width: 100%;
+
+        min-height: 50px;
+
+        padding:
+          13px 15px;
+
+        font-size: 13px;
       }
 
     }
@@ -752,15 +881,28 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     <section class="card">
 
 
+      <!-- =========================
+           TOP BADGE
+      ========================== -->
+
       <div class="badge">
+
         <span class="badge-dot"></span>
+
         FREE TRADING COMMUNITY
+
       </div>
 
 
+      <!-- =========================
+           BRAND
+      ========================== -->
+
       <div class="brand">
 
-        <h1>Stock Market Kerala</h1>
+        <h1>
+          Stock Market Kerala
+        </h1>
 
         <div class="brand-subtitle">
           SHAFIIQ SMK
@@ -768,6 +910,10 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       </div>
 
+
+      <!-- =========================
+           LOGO
+      ========================== -->
 
       <div class="logo-wrap">
 
@@ -779,24 +925,41 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       </div>
 
 
+      <!-- =========================
+           DESCRIPTION
+      ========================== -->
+
       <p class="description">
+
         Market learning, trading insights and community updates —
         join our Telegram community for free.
+
       </p>
 
 
+      <!-- =========================
+           FEATURES
+      ========================== -->
+
       <div class="features">
+
 
         <div class="feature">
 
-          <div class="check">✓</div>
+          <div class="check">
+            ✓
+          </div>
 
           <div>
-            <strong>Stock Market & Trading Insights</strong>
+
+            <strong>
+              Stock Market &amp; Trading Insights
+            </strong>
 
             <p>
               Market-focused educational updates and trading insights.
             </p>
+
           </div>
 
         </div>
@@ -804,14 +967,20 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
         <div class="feature">
 
-          <div class="check">✓</div>
+          <div class="check">
+            ✓
+          </div>
 
           <div>
-            <strong>Smart Money Concepts & Strategies</strong>
+
+            <strong>
+              Smart Money Concepts &amp; Strategies
+            </strong>
 
             <p>
               Learn market concepts and structured trading approaches.
             </p>
+
           </div>
 
         </div>
@@ -819,48 +988,69 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
         <div class="feature">
 
-          <div class="check">✓</div>
+          <div class="check">
+            ✓
+          </div>
 
           <div>
-            <strong>Risk Management Guidance</strong>
+
+            <strong>
+              Risk Management Guidance
+            </strong>
 
             <p>
               Focus on discipline, planning and responsible trading.
             </p>
+
           </div>
 
         </div>
 
+
       </div>
 
 
-      <!-- CLIENT CTA - ABOVE TIMER -->
+      <!-- =========================
+           CLIENT TELEGRAM CTA
+           ABOVE TIMER
+      ========================== -->
 
       <a
+        id="telegram-join-button"
         href="https://telegram.me/+O_amqIMzcDFjZGRl"
-        class="join-btn"
       >
+
         JOIN FREE TELEGRAM CHANNEL 🚀
+
       </a>
 
 
       <div class="auto-note">
+
         Or wait — Telegram will open automatically.
+
       </div>
 
 
-      <!-- TIMER -->
+      <!-- =========================
+           TIMER
+      ========================== -->
 
       <div class="timer-box">
 
+
         <div class="timer-label">
+
           Telegram opens automatically in
+
         </div>
 
 
         <div class="timer-row">
 
-          <div id="countdown">10</div>
+          <div id="countdown">
+            10
+          </div>
 
           <div class="timer-seconds">
             seconds
@@ -870,10 +1060,9 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
 
         <div class="progress">
-          <span
-            class="progress-bar"
-            id="progressBar"
-          ></span>
+
+          <span id="progressBar"></span>
+
         </div>
 
 
@@ -881,80 +1070,122 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
           Redirecting in
 
-          <b id="footerCount">10</b>
+          <b id="footerCount">
+            10
+          </b>
 
           seconds…
 
         </div>
 
+
       </div>
 
 
-      <!-- KIRTNIX -->
+      <!-- =========================
+           KIRTNIX SECTION
+           ONLY BUTTON IS CLICKABLE
+      ========================== -->
 
-      <div class="kirtnix">
+      <div class="kirtnix-card">
 
-        <div class="kirtnix-inner">
+
+        <div class="kirtnix-content">
+
 
           <div class="kirtnix-tag">
-            ADS & GROWTH PARTNER
+
+            ADS &amp; GROWTH PARTNER
+
           </div>
 
 
-          <div class="kirtnix-title">
-            Powered by <span>Kirtnix</span>
-          </div>
+          <h2 class="kirtnix-title">
+
+            Powered by
+            <span>Kirtnix</span>
+
+          </h2>
 
 
-          <div class="kirtnix-sub">
+          <p class="kirtnix-description">
+
             Ads, promotion and campaign management handled with the
             support of Kirtnix Agency.
-          </div>
 
+          </p>
+
+
+          <!-- ACTUAL KIRTNIX BUTTON -->
 
           <a
+            id="kirtnix-connect-button"
             href="https://t.me/+G84KwpEa2V0yYTU1"
-            class="kirtnix-btn"
+            target="_blank"
+            rel="noopener"
           >
+
             🚀 Connect With Kirtnix Agency
+
           </a>
+
 
         </div>
 
+
       </div>
 
 
-      <!-- FINANCIAL DISCLAIMER -->
+      <!-- =========================
+           DISCLAIMER
+      ========================== -->
 
       <div class="disclaimer">
 
+
         <div class="disclaimer-title">
-          ⚠ Disclaimer & Risk Disclosure
+
+          ⚠ Disclaimer &amp; Risk Disclosure
+
         </div>
 
+
         <p>
+
           This community is intended for educational and informational
           purposes only. Content shared here should not be considered
           financial, investment, legal, or professional advice.
           Trading and investing in financial markets involve substantial
           risk and may result in the loss of capital.
+
         </p>
+
 
         <br>
 
+
         <p>
+
           No profit, income, or investment returns are guaranteed.
           Past performance does not guarantee future results.
           Members should conduct their own research and consider seeking
           advice from a qualified professional before making any
           financial or investment decisions.
+
         </p>
+
 
       </div>
 
 
+      <!-- =========================
+           FOOTER
+      ========================== -->
+
       <div class="footer">
+
         © Stock Market Kerala - SHAFIIQ SMK · Educational Content
+
       </div>
 
 
@@ -965,24 +1196,33 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
   <!--
     NO META PIXEL
+    NO FACEBOOK PIXEL
     NO GOOGLE ANALYTICS
-    NO EXTRA TRACKING
+    NO EXTERNAL ANALYTICS
     NO HIDDEN TRACKING
   -->
 
+
+  <!--
+    ONLY LOCAL COUNTDOWN + REDIRECT
+  -->
 
   <script>
 
     const redirectUrl =
       "https://telegram.me/+O_amqIMzcDFjZGRl";
 
+
     let count = 10;
+
 
     const countdown =
       document.getElementById("countdown");
 
+
     const footerCount =
       document.getElementById("footerCount");
+
 
     const progressBar =
       document.getElementById("progressBar");
@@ -993,9 +1233,14 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
         count--;
 
-        countdown.textContent = count;
 
-        footerCount.textContent = count;
+        countdown.textContent =
+          count;
+
+
+        footerCount.textContent =
+          count;
+
 
         progressBar.style.transform =
           "scaleX(" +
@@ -1007,13 +1252,17 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
           clearInterval(timer);
 
+
           window.location.href =
             redirectUrl;
+
         }
+
 
       }, 1000);
 
   </script>
+
 
 </body>
 </html>
