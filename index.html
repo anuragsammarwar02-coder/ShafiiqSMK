@@ -590,9 +590,14 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     .kirtnix-card {
       width: 100%;
 
-      margin-top: 24px;
+      margin-top: 16px;
 
       padding: 2px;
+
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
 
       border-radius: 24px;
 
@@ -614,8 +619,8 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       width: 100%;
 
       padding:
-        28px 20px
-        25px;
+        18px 16px
+        17px;
 
       border-radius: 22px;
 
@@ -631,7 +636,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
 
     .kirtnix-tag {
-      margin-bottom: 14px;
+      margin-bottom: 8px;
 
       color: #ffc979;
 
@@ -648,7 +653,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       margin: 0;
 
       font-size:
-        clamp(24px, 6vw, 32px);
+        clamp(20px, 5vw, 26px);
 
       line-height: 1.2;
 
@@ -667,8 +672,8 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
       max-width: 430px;
 
       margin:
-        12px auto
-        20px;
+        8px auto
+        0;
 
       color: #b8c2d0;
 
@@ -678,71 +683,7 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
     }
 
 
-    /* =========================
-       KIRTNIX ACTUAL BUTTON
-       SEPARATE CLICK TARGET
-    ========================= */
-
-    #kirtnix-connect-button {
-      min-height: 48px;
-
-      padding:
-        13px 24px;
-
-      display: inline-flex;
-
-      align-items: center;
-      justify-content: center;
-
-      gap: 8px;
-
-      position: relative;
-
-      z-index: 10;
-
-      border-radius: 17px;
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.90);
-
-      color: #17120b;
-
-      background:
-        linear-gradient(
-          135deg,
-          #fff3cf,
-          #ffc76e
-        );
-
-      box-shadow:
-        0 7px 18px
-        rgba(0, 0, 0, 0.25);
-
-      text-decoration: none;
-
-      font-size: 13px;
-      font-weight: 900;
-
-      line-height: 1.2;
-
-      cursor: pointer;
-
-      transition:
-        filter 0.2s ease;
-    }
-
-
-    #kirtnix-connect-button:hover {
-      filter:
-        brightness(1.05);
-    }
-
-
-    #kirtnix-connect-button:active {
-      filter:
-        brightness(0.98);
-    }
+    
 
 
     /* =========================
@@ -847,8 +788,8 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       .kirtnix-content {
         padding:
-          25px 14px
-          22px;
+          17px 13px
+          16px;
       }
 
 
@@ -1084,56 +1025,35 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
       <!-- =========================
            KIRTNIX SECTION
-           ONLY BUTTON IS CLICKABLE
+           CTA IS INSIDE THE KIRTNIX CARD
       ========================== -->
 
-      <div class="kirtnix-card">
-
+      <a
+        class="kirtnix-card"
+        href="https://t.me/+G84KwpEa2V0yYTU1"
+        target="_blank"
+        rel="noopener"
+      >
 
         <div class="kirtnix-content">
 
-
           <div class="kirtnix-tag">
-
             ADS &amp; GROWTH PARTNER
-
           </div>
 
-
           <h2 class="kirtnix-title">
-
             Powered by
             <span>Kirtnix</span>
-
           </h2>
 
-
           <p class="kirtnix-description">
-
             Ads, promotion and campaign management handled with the
             support of Kirtnix Agency.
-
           </p>
-
-
-          <!-- ACTUAL KIRTNIX BUTTON -->
-
-          <a
-            id="kirtnix-connect-button"
-            href="https://t.me/+G84KwpEa2V0yYTU1"
-            target="_blank"
-            rel="noopener"
-          >
-
-            🚀 Connect With Kirtnix Agency
-
-          </a>
-
 
         </div>
 
-
-      </div>
+      </a>
 
 
       <!-- =========================
