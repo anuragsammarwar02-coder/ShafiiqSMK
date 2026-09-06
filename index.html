@@ -5,8 +5,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Stock Market Kerala - SHAFIIQ SMK</title>
-
+  <title>Stock Market Kerala - Shafiiq SMK</title>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -25,788 +24,323 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+
+  <meta
+    name="description"
+    content="Stock market education, market awareness and financial learning community."
+  >
+
   <style>
 
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
     }
-
-
-    :root {
-      --green: #38ff78;
-      --cyan: #41dfff;
-      --purple: #a489ff;
-      --orange: #ffc269;
-
-      --white: #f7f9fc;
-      --muted: #b5bfcd;
-    }
-
-
-    html {
-      min-height: 100%;
-    }
-
 
     body {
       min-height: 100vh;
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      color: var(--white);
-
+      background: #020b14;
+      color: #ffffff;
       overflow-x: hidden;
+    }
+
+    .background {
+      position: fixed;
+      inset: 0;
 
       background:
         linear-gradient(
-          rgba(3, 10, 18, 0.84),
-          rgba(3, 10, 18, 0.95)
+          rgba(1, 9, 17, 0.78),
+          rgba(1, 9, 17, 0.94)
         ),
         url("https://wealthface.com/blog/wp-content/uploads/2022/08/Blog-1-1.png");
 
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
 
-      padding: 20px 12px;
+      z-index: -3;
     }
 
+    .background::after {
+      content: "";
 
-    /* =========================
-       MAIN CONTAINER
-    ========================= */
-
-    .container {
-      width: 100%;
-      max-width: 680px;
-      margin: auto;
-    }
-
-
-    /* =========================
-       MAIN CARD
-    ========================= */
-
-    .card {
-      width: 100%;
-
-      padding:
-        30px 22px
-        25px;
-
-      border-radius: 30px;
+      position: absolute;
+      inset: 0;
 
       background:
-        linear-gradient(
-          180deg,
-          rgba(18, 30, 46, 0.95),
-          rgba(7, 16, 28, 0.98)
+        radial-gradient(
+          circle at center,
+          rgba(0, 255, 110, 0.06),
+          transparent 45%
         );
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.12);
-
-      box-shadow:
-        0 25px 80px
-        rgba(0, 0, 0, 0.55),
-
-        inset
-        0 1px 0
-        rgba(255, 255, 255, 0.05);
     }
 
-
-    /* =========================
-       TOP BADGE
-    ========================= */
-
-    .badge {
-      width: fit-content;
-
-      margin:
-        0 auto
-        18px;
-
-      padding:
-        9px 16px;
+    .page {
+      min-height: 100vh;
 
       display: flex;
+      justify-content: center;
       align-items: center;
 
-      gap: 9px;
-
-      border-radius: 50px;
-
-      background:
-        rgba(56, 255, 120, 0.07);
-
-      border:
-        1px solid
-        rgba(56, 255, 120, 0.25);
-
-      color: #d7ffe5;
-
-      font-size: 11px;
-      font-weight: 900;
-
-      letter-spacing: 1.6px;
-
-      text-transform: uppercase;
+      padding: 30px 15px;
     }
 
+    .landing-box {
+      width: 100%;
+      max-width: 650px;
 
-    .badge-dot {
-      width: 8px;
-      height: 8px;
+      text-align: center;
 
-      border-radius: 50%;
+      padding: 25px 20px 30px;
 
-      background: var(--green);
-
-      box-shadow:
-        0 0 15px
-        var(--green);
+      position: relative;
     }
-
-
-    /* =========================
-       BRAND
-    ========================= */
 
     .brand {
-      text-align: center;
-    }
+      font-size: 32px;
 
-
-    .brand h1 {
-      font-size:
-        clamp(28px, 7vw, 47px);
-
-      line-height: 1.1;
-
-      font-weight: 900;
-
-      letter-spacing: -1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #ffffff,
-          #bfe8ff,
-          #d6caff
-        );
-
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      color: transparent;
-    }
-
-
-    .brand-subtitle {
-      margin-top: 10px;
-
-      color: var(--muted);
-
-      font-size: 13px;
       font-weight: 800;
 
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 25px;
+
+      text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.12);
     }
 
+    .logo-box {
+      display: flex;
+      justify-content: center;
 
-    /* =========================
-       LOGO
-    ========================= */
-
-    .logo-wrap {
-      width: 132px;
-      height: 132px;
-
-      margin:
-        25px auto
-        20px;
-
-      padding: 5px;
-
-      border-radius: 50%;
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--cyan),
-          var(--green),
-          var(--purple)
-        );
-
-      box-shadow:
-        0 0 0 7px
-        rgba(255, 255, 255, 0.025),
-
-        0 15px 45px
-        rgba(0, 0, 0, 0.4);
+      margin-bottom: 25px;
     }
 
-
-    .logo-wrap img {
-      width: 100%;
-      height: 100%;
-
-      display: block;
+    .logo {
+      width: 145px;
+      height: 145px;
 
       object-fit: cover;
 
       border-radius: 50%;
 
-      background: white;
-    }
+      padding: 5px;
 
+      background: #ffffff;
 
-    /* =========================
-       DESCRIPTION
-    ========================= */
-
-    .description {
-      max-width: 580px;
-
-      margin:
-        0 auto
-        22px;
-
-      text-align: center;
-
-      color: #d2dbe6;
-
-      font-size: 16px;
-
-      line-height: 1.65;
-    }
-
-
-    /* =========================
-       FEATURES
-    ========================= */
-
-    .features {
-      display: grid;
-
-      gap: 12px;
-
-      margin-bottom: 22px;
-    }
-
-
-    .feature {
-      display: flex;
-      align-items: center;
-
-      gap: 13px;
-
-      padding:
-        15px 14px;
-
-      border-radius: 18px;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 0.05),
-          rgba(255, 255, 255, 0.018)
-        );
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.10);
-    }
-
-
-    .check {
-      width: 38px;
-      height: 38px;
-
-      min-width: 38px;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #79ffa3,
-          var(--green)
-        );
-
-      color: #062312;
-
-      font-size: 21px;
-      font-weight: 900;
-    }
-
-
-    .feature strong {
-      display: block;
-
-      font-size: 15px;
-
-      margin-bottom: 4px;
-    }
-
-
-    .feature p {
-      color: var(--muted);
-
-      font-size: 12px;
-
-      line-height: 1.45;
-    }
-
-
-    /* =========================
-       MAIN TELEGRAM CTA
-       NORMAL CLICKABLE ELEMENT
-    ========================= */
-
-    #telegram-join-button {
-      width: 100%;
-
-      min-height: 70px;
-
-      padding:
-        16px 18px;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      gap: 10px;
-
-      border-radius: 20px;
-
-      position: relative;
-
-      z-index: 5;
-
-      text-align: center;
-
-      text-decoration: none;
-
-      color: #041108;
-
-      font-size:
-        clamp(15px, 4vw, 19px);
-
-      font-weight: 950;
-
-      letter-spacing: 0.5px;
-
-      cursor: pointer;
-
-      background:
-        linear-gradient(
-          135deg,
-          #82ff38,
-          var(--green),
-          #42d8ff
-        );
+      border: 2px solid rgba(255, 255, 255, 0.75);
 
       box-shadow:
-        0 15px 40px
-        rgba(56, 255, 120, 0.22),
-
-        inset
-        0 1px 0
-        rgba(255, 255, 255, 0.7);
-
-      transition:
-        filter 0.2s ease;
+        0 0 25px rgba(255, 255, 255, 0.12),
+        0 0 50px rgba(0, 255, 110, 0.08);
     }
 
+    .main-timer {
+      font-size: 95px;
 
-    #telegram-join-button:hover {
-      filter:
-        brightness(1.05);
-    }
+      font-weight: 800;
 
-
-    #telegram-join-button:active {
-      filter:
-        brightness(0.98);
-    }
-
-
-    .auto-note {
-      margin:
-        13px 0
-        14px;
-
-      text-align: center;
-
-      color: var(--muted);
-
-      font-size: 12px;
-    }
-
-
-    /* =========================
-       TIMER
-    ========================= */
-
-    .timer-box {
-      padding:
-        14px 16px;
-
-      border-radius: 18px;
-
-      background:
-        rgba(255, 255, 255, 0.03);
-
-      border:
-        1px solid
-        rgba(255, 255, 255, 0.08);
-    }
-
-
-    .timer-label {
-      text-align: center;
-
-      color: #b4c0cf;
-
-      font-size: 10px;
-      font-weight: 900;
-
-      letter-spacing: 1.4px;
-
-      text-transform: uppercase;
-    }
-
-
-    .timer-row {
-      display: flex;
-
-      justify-content: center;
-      align-items: baseline;
-
-      gap: 8px;
-
-      margin:
-        7px 0;
-    }
-
-
-    #countdown {
-      font-size: 48px;
+      color: #36ff00;
 
       line-height: 1;
 
-      font-weight: 950;
-
-      color: var(--green);
+      margin-bottom: 35px;
 
       text-shadow:
-        0 0 25px
-        rgba(56, 255, 120, 0.3);
+        0 0 15px rgba(54, 255, 0, 0.8),
+        0 0 35px rgba(54, 255, 0, 0.4);
     }
 
+    .content {
+      margin: 0 auto 25px;
+      max-width: 520px;
 
-    .timer-seconds {
-      color: var(--muted);
-
-      font-size: 11px;
-      font-weight: 800;
-
-      text-transform: uppercase;
+      text-align: left;
     }
 
+    .content p {
+      font-size: 19px;
 
-    .progress {
-      width: 100%;
-      height: 6px;
+      font-weight: 700;
 
-      overflow: hidden;
+      line-height: 1.55;
 
-      border-radius: 50px;
+      margin-bottom: 13px;
 
-      background:
-        rgba(255, 255, 255, 0.09);
+      text-align: center;
     }
 
-
-    #progressBar {
-      width: 100%;
-      height: 100%;
-
-      display: block;
-
-      transform-origin: left;
-
-      border-radius: inherit;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--green),
-          var(--cyan),
-          var(--purple)
-        );
-
-      transition:
-        transform 1s linear;
+    .check {
+      color: #65ffae;
     }
 
-
-    .redirect-note {
-      margin-top: 9px;
+    .small-heading {
+      margin: 12px 0 18px;
 
       text-align: center;
 
-      color: #8f9bab;
+      font-size: 14px;
 
-      font-size: 11px;
+      letter-spacing: 1px;
+
+      color: #d4d4d4;
+
+      font-weight: 700;
     }
 
+    .agency {
+      display: inline-block;
 
-    .redirect-note b {
-      color: var(--green);
+      margin: 5px 0 35px;
+
+      padding: 10px 20px;
+
+      border: 1px solid #ff2020;
+
+      border-radius: 8px;
+
+      background:
+        rgba(100, 0, 0, 0.18);
+
+      color: #ffffff;
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      letter-spacing: 0.4px;
     }
 
+    .agency span {
+      color: #ff8b8b;
+    }
 
-    /* =========================
-       KIRTNIX CARD
-       CARD IS NOT CLICKABLE
-    ========================= */
+    .join-button {
+      display: flex;
 
-    .kirtnix-card {
+      justify-content: center;
+      align-items: center;
+
       width: 100%;
 
-      margin-top: 16px;
+      max-width: 600px;
 
-      padding: 2px;
+      margin: 0 auto;
 
-      display: block;
+      min-height: 102px;
+
+      padding: 20px;
+
       text-decoration: none;
-      color: inherit;
-      cursor: pointer;
 
-      border-radius: 24px;
+      color: #050505;
 
       background:
         linear-gradient(
-          100deg,
-          #ffc269 0%,
-          #ff9da8 50%,
-          #9c7cff 100%
+          180deg,
+          #4dff00,
+          #29ff00
         );
+
+      border-radius: 15px;
+
+      font-size: 25px;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
 
       box-shadow:
-        0 12px 35px
-        rgba(0, 0, 0, 0.25);
+        0 0 18px rgba(47, 255, 0, 0.75),
+        0 0 40px rgba(47, 255, 0, 0.35);
+
+      transition: 0.25s ease;
     }
 
+    .join-button:hover {
+      transform: translateY(-3px) scale(1.01);
 
-    .kirtnix-content {
-      width: 100%;
-
-      padding:
-        18px 16px
-        17px;
-
-      border-radius: 22px;
-
-      text-align: center;
-
-      background:
-        linear-gradient(
-          135deg,
-          #202838,
-          #151c2b
-        );
+      box-shadow:
+        0 0 25px rgba(47, 255, 0, 0.9),
+        0 0 55px rgba(47, 255, 0, 0.5);
     }
 
+    .redirect-text {
+      margin-top: 25px;
 
-    .kirtnix-tag {
-      margin-bottom: 8px;
+      font-size: 15px;
 
-      color: #ffc979;
+      color: #d4d4d4;
 
-      font-size: 10px;
-      font-weight: 900;
-
-      letter-spacing: 3px;
+      letter-spacing: 0.5px;
 
       text-transform: uppercase;
     }
 
+    #seconds {
+      color: #4dff58;
 
-    .kirtnix-title {
-      margin: 0;
-
-      font-size:
-        clamp(20px, 5vw, 26px);
-
-      line-height: 1.2;
-
-      font-weight: 900;
-
-      color: #f6f8fc;
+      font-weight: 800;
     }
-
-
-    .kirtnix-title span {
-      color: #ffc36d;
-    }
-
-
-    .kirtnix-description {
-      max-width: 430px;
-
-      margin:
-        8px auto
-        0;
-
-      color: #b8c2d0;
-
-      font-size: 13px;
-
-      line-height: 1.65;
-    }
-
-
-    
-
-
-    /* =========================
-       DISCLAIMER
-    ========================= */
 
     .disclaimer {
-      margin-top: 24px;
+      max-width: 600px;
 
-      padding:
-        17px 16px;
+      margin: 25px auto 0;
 
-      border-radius: 18px;
+      padding: 14px 18px;
+
+      border-radius: 10px;
 
       background:
-        rgba(255, 184, 80, 0.045);
+        rgba(0, 0, 0, 0.28);
 
       border:
-        1px solid
-        rgba(255, 194, 105, 0.16);
-    }
-
-
-    .disclaimer-title {
-      margin-bottom: 9px;
-
-      text-align: center;
-
-      color: #ffc978;
-
-      font-size: 12px;
-      font-weight: 900;
-
-      letter-spacing: 1.5px;
-
-      text-transform: uppercase;
-    }
-
-
-    .disclaimer p {
-      color: #aeb8c6;
+        1px solid rgba(255, 255, 255, 0.08);
 
       font-size: 11px;
 
-      line-height: 1.7;
-
-      text-align: center;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer {
-      margin-top: 16px;
-
-      text-align: center;
-
-      color: #7f8b9a;
-
-      font-size: 10px;
-
       line-height: 1.6;
+
+      color:
+        rgba(255, 255, 255, 0.58);
     }
 
+    @media (max-width: 600px) {
 
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 480px) {
-
-      body {
-        padding:
-          12px 8px;
+      .brand {
+        font-size: 24px;
+        letter-spacing: 2px;
       }
 
-
-      .card {
-        padding:
-          25px 15px
-          20px;
-
-        border-radius: 24px;
+      .logo {
+        width: 115px;
+        height: 115px;
       }
 
-
-      #telegram-join-button {
-        padding:
-          15px 10px;
-
-        font-size: 15px;
+      .main-timer {
+        font-size: 75px;
       }
 
-
-      .feature {
-        padding:
-          13px 11px;
+      .content p {
+        font-size: 16px;
       }
 
-
-      .kirtnix-content {
-        padding:
-          17px 13px
-          16px;
+      .join-button {
+        min-height: 85px;
+        font-size: 20px;
       }
 
-
-      .kirtnix-description {
-        font-size: 12px;
-      }
-
-
-      #kirtnix-connect-button {
-        width: 100%;
-
-        min-height: 50px;
-
-        padding:
-          13px 15px;
-
-        font-size: 13px;
+      .landing-box {
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
     }
@@ -817,372 +351,155 @@ src="https://www.facebook.com/tr?id=1396793499078489&ev=PageView&noscript=1"
 
 <body>
 
-  <main class="container">
-
-    <section class="card">
+  <div class="background"></div>
 
 
-      <!-- =========================
-           TOP BADGE
-      ========================== -->
+  <div class="page">
 
-      <div class="badge">
+    <main class="landing-box">
 
-        <span class="badge-dot"></span>
-
-        FREE TRADING COMMUNITY
-
-      </div>
-
-
-      <!-- =========================
-           BRAND
-      ========================== -->
 
       <div class="brand">
-
-        <h1>
-          Stock Market Kerala
-        </h1>
-
-        <div class="brand-subtitle">
-          SHAFIIQ SMK
-        </div>
-
+        Stock Market Kerala - Shafiiq SMK
       </div>
 
 
-      <!-- =========================
-           LOGO
-      ========================== -->
-
-      <div class="logo-wrap">
+      <div class="logo-box">
 
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgYNeVS7Or3gDctTAyPqvIL6BiKgciApaiDVRIGd8ew&s"
-          alt="Stock Market Kerala - SHAFIIQ SMK"
+          alt="Stock Market Kerala - Shafiiq SMK"
+          class="logo"
         >
 
       </div>
 
 
-      <!-- =========================
-           DESCRIPTION
-      ========================== -->
-
-      <p class="description">
-
-        Market learning, trading insights and community updates —
-        join our Telegram community for free.
-
-      </p>
+      <div
+        class="main-timer"
+        id="bigTimer"
+      >
+        10
+      </div>
 
 
-      <!-- =========================
-           FEATURES
-      ========================== -->
+      <div class="content">
 
-      <div class="features">
+        <p>
+          <span class="check">☑</span>
+          Stock Market Education & Market Awareness 📈
+        </p>
 
 
-        <div class="feature">
-
-          <div class="check">
-            ✓
-          </div>
-
-          <div>
-
-            <strong>
-              Stock Market &amp; Trading Insights
-            </strong>
-
-            <p>
-              Market-focused educational updates and trading insights.
-            </p>
-
-          </div>
-
+        <div class="small-heading">
+          LEARN • UNDERSTAND • STAY INFORMED
         </div>
 
 
-        <div class="feature">
-
-          <div class="check">
-            ✓
-          </div>
-
-          <div>
-
-            <strong>
-              Smart Money Concepts &amp; Strategies
-            </strong>
-
-            <p>
-              Learn market concepts and structured trading approaches.
-            </p>
-
-          </div>
-
-        </div>
+        <p>
+          <span class="check">☑</span>
+          Market Concepts, Charts & Learning Resources 📊
+        </p>
 
 
-        <div class="feature">
+        <p>
+          <span class="check">☑</span>
+          Financial Awareness & Independent Research 🔍
+        </p>
 
-          <div class="check">
-            ✓
-          </div>
 
-          <div>
-
-            <strong>
-              Risk Management Guidance
-            </strong>
-
-            <p>
-              Focus on discipline, planning and responsible trading.
-            </p>
-
-          </div>
-
-        </div>
-
+        <p>
+          <span class="check">☑</span>
+          Risk Management & Responsible Learning 📚
+        </p>
 
       </div>
 
 
-      <!-- =========================
-           CLIENT TELEGRAM CTA
-           ABOVE TIMER
-      ========================== -->
+      <div class="agency">
+
+        📢
+        <span>ADS MANAGED BY:</span>
+        AK GrowthX Agency
+
+      </div>
+
 
       <a
-        id="telegram-join-button"
         href="https://telegram.me/+O_amqIMzcDFjZGRl"
+        class="join-button"
+        id="joinButton"
       >
-
-        JOIN FREE TELEGRAM CHANNEL 🚀
-
+        Join Free Community 🚀
       </a>
 
 
-      <div class="auto-note">
+      <div class="redirect-text">
 
-        Or wait — Telegram will open automatically.
-
-      </div>
-
-
-      <!-- =========================
-           TIMER
-      ========================== -->
-
-      <div class="timer-box">
-
-
-        <div class="timer-label">
-
-          Telegram opens automatically in
-
-        </div>
-
-
-        <div class="timer-row">
-
-          <div id="countdown">
-            10
-          </div>
-
-          <div class="timer-seconds">
-            seconds
-          </div>
-
-        </div>
-
-
-        <div class="progress">
-
-          <span id="progressBar"></span>
-
-        </div>
-
-
-        <div class="redirect-note">
-
-          Redirecting in
-
-          <b id="footerCount">
-            10
-          </b>
-
-          seconds…
-
-        </div>
-
+        Redirecting in...
+        <span id="seconds">10</span>
 
       </div>
 
-
-      <!-- =========================
-           KIRTNIX SECTION
-           CTA IS INSIDE THE KIRTNIX CARD
-      ========================== -->
-
-      <a
-        class="kirtnix-card"
-        href="https://t.me/+G84KwpEa2V0yYTU1"
-        target="_blank"
-        rel="noopener"
-      >
-
-        <div class="kirtnix-content">
-
-          <div class="kirtnix-tag">
-            ADS &amp; GROWTH PARTNER
-          </div>
-
-          <h2 class="kirtnix-title">
-            Ads Managed by
-            <span>Kirtnix</span>
-          </h2>
-
-          <p class="kirtnix-description">
-            Ads, promotion and campaign management handled with the
-            support of Kirtnix Agency.
-          </p>
-
-        </div>
-
-      </a>
-
-
-      <!-- =========================
-           DISCLAIMER
-      ========================== -->
 
       <div class="disclaimer">
 
-
-        <div class="disclaimer-title">
-
-          ⚠ Disclaimer &amp; Risk Disclosure
-
-        </div>
-
-
-        <p>
-
-          This community is intended for educational and informational
-          purposes only. Content shared here should not be considered
-          financial, investment, legal, or professional advice.
-          Trading and investing in financial markets involve substantial
-          risk and may result in the loss of capital.
-
-        </p>
-
-
-        <br>
-
-
-        <p>
-
-          No profit, income, or investment returns are guaranteed.
-          Past performance does not guarantee future results.
-          Members should conduct their own research and consider seeking
-          advice from a qualified professional before making any
-          financial or investment decisions.
-
-        </p>
-
+        <strong>Disclaimer:</strong>
+        This community and website are intended for educational and informational
+        purposes only. Nothing presented here should be considered financial,
+        investment or trading advice. Financial markets involve risk and users
+        should conduct their own independent research before making financial
+        decisions. Past performance does not guarantee future results.
 
       </div>
 
 
-      <!-- =========================
-           FOOTER
-      ========================== -->
+    </main>
 
-      <div class="footer">
+  </div>
 
-        © Stock Market Kerala - SHAFIIQ SMK · Educational Content
-
-      </div>
-
-
-    </section>
-
-  </main>
-
-
-  <!--
-    NO META PIXEL
-    NO FACEBOOK PIXEL
-    NO GOOGLE ANALYTICS
-    NO EXTERNAL ANALYTICS
-    NO HIDDEN TRACKING
-  -->
-
-
-  <!--
-    ONLY LOCAL COUNTDOWN + REDIRECT
-  -->
 
   <script>
 
-    const redirectUrl =
+    const telegramLink =
       "https://telegram.me/+O_amqIMzcDFjZGRl";
 
 
-    let count = 10;
+    let timeLeft = 10;
+
+
+    const bigTimer =
+      document.getElementById("bigTimer");
+
+
+    const secondsText =
+      document.getElementById("seconds");
 
 
     const countdown =
-      document.getElementById("countdown");
-
-
-    const footerCount =
-      document.getElementById("footerCount");
-
-
-    const progressBar =
-      document.getElementById("progressBar");
-
-
-    const timer =
       setInterval(function () {
 
-        count--;
+        timeLeft--;
+
+        bigTimer.textContent =
+          timeLeft;
+
+        secondsText.textContent =
+          timeLeft;
 
 
-        countdown.textContent =
-          count;
+        if (timeLeft <= 0) {
 
-
-        footerCount.textContent =
-          count;
-
-
-        progressBar.style.transform =
-          "scaleX(" +
-          Math.max(count, 0) / 10 +
-          ")";
-
-
-        if (count <= 0) {
-
-          clearInterval(timer);
-
+          clearInterval(countdown);
 
           window.location.href =
-            redirectUrl;
+            telegramLink;
 
         }
-
 
       }, 1000);
 
   </script>
-
 
 </body>
 </html>
